@@ -109,3 +109,27 @@ Returns the current URL
 ```
 const currentURL = () => window.location.href;
 ```
+
+<br>
+
+**11. Remove duplicates from an array**
+
+The easiest way imo to remove duplicates from an existing array is to convert it to a Set() (think of them as a type of array where each value can only occur once, even if you try to add a repeated value later) and then convert it back to array using the spread operator (...) (as the name implies, it spreads an interable into its individual elements)
+
+```
+const repeatedNumbers = [1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9];
+
+const uniqueNumbers = [...new Set(repeatedNumbers)];
+```
+
+<br>
+
+**12. Creating shallow copies of objects and arrays**
+
+The spread operator (...) can be used to create shallow copies of an existing object or array (click [here](https://developer.mozilla.org/en-US/docs/Glossary/Shallow_copy) to read more about shallow copies)
+
+```
+const newArray = [...oldArray];
+
+const newObject = {...oldObject};
+```
