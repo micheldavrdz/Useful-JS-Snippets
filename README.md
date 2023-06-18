@@ -158,3 +158,15 @@ Takes the numbers of an array and returns their average
 ```
 const average = (...nums) => nums.reduce((acc, val) => acc + val, 0) / nums.length;
 ```
+
+<br>
+
+**15. Digitize**
+
+Converts a number to an array of digits
+
+e.g: 789 turns into [7,8,9]
+
+```
+const digitize = num => [...`${num}`].map(val => parseInt(val));
+```
