@@ -148,3 +148,13 @@ const arrayToList = (arr, id) =>
     (arrEl.innerHTML += arr.map(item => `<li>${item}</li>`).join(''))
   ))();
 ```
+
+<br>
+
+**14. Average**
+
+Takes the numbers of an array and returns their average
+
+```
+const average = (...nums) => nums.reduce((acc, val) => acc + val, 0) / nums.length;
+```
