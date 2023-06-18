@@ -133,3 +133,18 @@ const newArray = [...oldArray];
 
 const newObject = {...oldObject};
 ```
+
+<br>
+
+**13. Convert an array to a list**
+
+Take a given array, convert it to a list (turns the elements into li tags) and finally append them to a list
+with an id
+
+```
+const arrayToList = (arr, id) =>
+  (arrEl => (
+    (arrEl = document.querySelector(`#${id}`)),
+    (arrEl.innerHTML += arr.map(item => `<li>${item}</li>`).join(''))
+  ))();
+```
